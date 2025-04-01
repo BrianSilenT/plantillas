@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nbar">
+        <div class="logo">banchi</div>
+        <ul class="nav-links">
+            <li><a href="#">inicio</a></li>
+            <li><a href="#">servicios</a></li>
+            <li><a href="#">contacto</a></li>
+            <li><a href="#">acerca de nosotros</a></li>
+        </ul>
+        <button class="burguer">
+<span></span> 
+<span></span>
+<span></span>
+        </button>
+    </nav>
+    <header id="inicio" class="hero_section">
+        <h1>Bienvenido a nuestra pagina web</h1>
+        <p>Descubre nuestros servicios y mas</p>
+        <a href="servicios" class="btn-primary">descubrir mas</a>
+    </header>
+
+    <main>
+        <section id="servicios" class="cards-container">
+            <h2>Nuestros servicios</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>servicio 1</h3>
+                    <p>Descripcion breve de este servicio</p>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <h3>servicio 2</h3>
+                    <p>Descripcion breve de este servicio</p>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <h3>Servicio 3</h3>
+                    <p>Descripcion breve de este servicio</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="contact-section">
+            <h2>contacto</h2>
+            <form id="contact-form" method="post" action="/send-email">
+                <input type="text" name="nombre" placeholder="nombre" required>
+                <input type="email" name="correo" placeholder="correo" required>
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje"required></textarea>
+                <button type="submit">enviar</button>
+            </form>
+        </section>
+        <div id="flash-mesages" class="flash-mesages"></div>
+
+        <section id="acerca" class="about-section">
+            <h2>Acerca de nosotros</h2>
+            <p>somos una empresa dedicada a brindar las mejores soluciones</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>todos los derechos reservados</p>
+        <p>2025</p>
+</body>
+</html>
